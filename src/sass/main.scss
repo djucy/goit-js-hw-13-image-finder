@@ -1,0 +1,14 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+@import './layout/body.scss';
+@import './layout/common-styles.scss';
+@import './components/section.scss';
+@import './components/card-markup.scss';
+@import './components/button.scss';
+@import './components/search-form.scss';
+@import './components/modal.scss';
+@import './layout/hidden-element.scss';

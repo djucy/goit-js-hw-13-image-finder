@@ -1,0 +1,42 @@
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-style: normal;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #a3a1ff;
+  background-image: url(../images/leafs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media screen and (max-width: 738px) {
+    background-image: url(../images/flowers-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and(min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/flowers-mobile@2x.jpg);
+  }
+  @media screen and(min-width:739px) {
+    background-image: url(../images/leafs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // object-fit: fill;
+
+    @media screen and(min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/leafs.jpg);
+    }
+  }
+}
