@@ -5,7 +5,7 @@ body {
   width: 100vw;
   height: 100vh;
 
-  background-color: #a3a1ff;
+  background-color: #61b99f;
   background-image: url(../images/leafs.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,10 +13,12 @@ body {
   background-attachment: fixed;
 
   @media screen and (max-width: 738px) {
+    background-color: rgb(248, 75, 248);
     background-image: url(../images/flowers-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   @media screen and(min-device-pixel-ratio: 2),
@@ -30,6 +32,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     // object-fit: fill;
 
     @media screen and(min-device-pixel-ratio: 2),
