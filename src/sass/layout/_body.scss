@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: repeat-y;
 
   @media screen and (max-width: 738px) {
     background-color: rgb(248, 75, 248);
@@ -19,6 +20,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: repeat-y;
   }
 
   @media screen and(min-device-pixel-ratio: 2),
@@ -34,6 +36,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: repeat-y;
     // object-fit: fill;
 
     @media screen and(min-device-pixel-ratio: 2),
