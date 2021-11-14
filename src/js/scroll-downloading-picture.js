@@ -5,6 +5,7 @@ export default function smoothScroll() {
          
     refs.gallery.scrollIntoView({
   behavior: 'smooth',
-  block: 'end',
+      block: 'end',
     });
+  
  }

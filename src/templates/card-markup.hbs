@@ -2,9 +2,10 @@
 <li>
     <div class="photo-card">
         <div class="pic-container">
-            <img class="pic" srcset="{{src.small}},{{src.medium}},{{src.large}},{{src.large2x}}"
+            <img class="pic" height="240" width ="360" loading="lazy"
+            srcset="{{src.small}},{{src.medium}},{{src.large}},{{src.large2x}}"
             sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:480px) 450w"
-            src="{{src.medium}}" alt="{{query}}" loading="lazy" />
+            src="{{src.medium}}" alt="{{query}}" />
         </div>
         
         <div class="stats">

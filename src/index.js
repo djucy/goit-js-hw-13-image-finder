@@ -43,7 +43,7 @@ function appendPhotosMarkup(photos) {
     }
     refs.userMessage.innerHTML = '';
     refs.gallery.insertAdjacentHTML('beforeend', listCards);
-    setTimeout(smoothScroll, 1000 );
+    setTimeout(smoothScroll, 1500 );
     
 }
  
