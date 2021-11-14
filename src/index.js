@@ -42,9 +42,8 @@ function appendPhotosMarkup(photos) {
         return refs.userMessage.insertAdjacentText('beforeend', msg);
     }
     refs.userMessage.innerHTML = '';
-    
     refs.gallery.insertAdjacentHTML('beforeend', listCards);
-    smoothScroll();
+    setTimeout(smoothScroll, 1000 );
     
 }
  
