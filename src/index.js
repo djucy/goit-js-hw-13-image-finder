@@ -24,21 +24,33 @@ function onSearchPhotos(event) {
     photosApiService.resetPage();
     photosApiService.fetchPhotos()
         .then(appendPhotosMarkup)
-        .catch(error => { return console.error(error); });
+        .catch(onError);
  }
 
 function onButtonClickLoadMore() {
     photosApiService.fetchPhotos()
-        .then(appendPhotosMarkup)      
+        .then(appendPhotosMarkup)
+    .catch(onError);
  }
 
 function appendPhotosMarkup(photos) {
-   
+   let msg = ''
     const listCards = cardMarkup(photos);
     photos.length === 12 ? addLoadMoreButton() : removeLoadMoreButton();
+    if (photos.length === 0) {
+        msg = 'Sorry, no matches were found for your query.'
+        return refs.userMessage.insertAdjacentText('beforeend', msg);
+    }
+    refs.userMessage.innerHTML = '';
+    
     refs.gallery.insertAdjacentHTML('beforeend', listCards);
     smoothScroll();
     
+}
+ 
+function onError(error) {
+    return refs.userMessage.insertAdjacentHTML('beforeend', error);
+    console.error(error);
 }
 
  
